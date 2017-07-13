@@ -1,0 +1,16 @@
+{
+  "name": "ReduxRouter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "postinstall": "find node_modules -type f -name '.babelrc' | grep -v 'node_modules/react-native/packager/react-packager/.babelrc' | xargs rm",
+    "preinstall": "rm -rf node_modules/react-native-router-redux",
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "react-native": "^0.16.0",
+    "react-native-router-redux": "file:../..",
+    "react-redux": "^3.1.0",
+    "redux": "^3.0.4"
+  }
+}
